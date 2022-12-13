@@ -7,10 +7,8 @@ from nltk.tokenize import word_tokenize
 import nltk
 parser = argparse.ArgumentParser()
 parser.add_argument("--model_path", type=str, default=1)
-parser.add_argument("--batch", type=int, default=20)
 args = parser.parse_args()
 
-batchsize = args.batch
 path = args.model_path
 
 nltk.download('punkt')
